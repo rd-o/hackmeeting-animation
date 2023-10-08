@@ -1,6 +1,8 @@
 # hackmeeting-animation
 
-https://github.com/rd-o/hackmeeting-animation/assets/1220610/0ac05ee6-911e-4066-9122-4cee54d43082
+https://github.com/rd-o/hackmeeting-animation/assets/1220610/508cae9f-b8fd-43d9-bb00-1ee8175e16ae
+
+![blender](https://github.com/rd-o/hackmeeting-animation/assets/1220610/fbacd73e-0bc1-4628-822f-e374f71b0d9e)
 
 Steps to configure:
 
