@@ -22,7 +22,7 @@ def png_to_numpy(image_path):
 # Replace 'path/to/your/image.png' with the actual path to your black and white PNG image
 
 def file_to_array():
-    image_path = '/home/ale/project/hackmeeting2023/test.png'
+    image_path = '/home/ale/project/hackmeeting2023/call_speakers.png'
     numpy_array = png_to_numpy(image_path)
     numpy_array = np.rot90(numpy_array, k=1, axes=(0, 1))
     numpy_array = np.flip(numpy_array, axis=0)

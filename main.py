@@ -3,7 +3,7 @@ import sys
 sys.path.append('/home/ale/project/hackmeeting2023/hackmeeting-animation')
 import bpy
 
-# del sys.modules['game_of_life']
+#del sys.modules['game_of_life']
 import game_of_life
 
 ON = 255
@@ -44,8 +44,9 @@ def draw_square_in_position(x, y, frame):
     gp_stroke.start_cap_mode = 'ROUND'
     gp_stroke.end_cap_mode = 'ROUND'
     gp_stroke.use_cyclic = True
-    square_size = 0.1
-    space_between_segment = 0.02
+    #change here if you want to change pixel size
+    square_size = 0.07
+    space_between_segment = 0.01
 
     # x, y, z: x and z only
     x_b = (square_size + space_between_segment) * x
@@ -94,8 +95,12 @@ m = 22
 grid = game_of_life.init_grid(n)
 
 for f in range(num_of_frames):
-    frame = gp_layer.frames.new(f + 1)
+    #frame = gp_layer.frames.new(f + 1)
+    frame = gp_layer.frames.new(num_of_frames - f)
+    
     frame.clear()
     draw_matrix(grid, frame, n, m)
     grid = game_of_life.update(grid, n, m)
 
+#frame = gp_layer.frames.new(1)
+#draw_matrix(grid, frame, n, m)

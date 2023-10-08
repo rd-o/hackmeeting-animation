@@ -1,7 +1,7 @@
 import numpy as np
 import sys
 
-# del sys.modules['png_to_array']
+#del sys.modules['png_to_array']
 import png_to_array
 
 ON = 255
